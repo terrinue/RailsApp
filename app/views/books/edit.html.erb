@@ -1,0 +1,6 @@
+<div class="toolbar"><%=link_to "書籍の詳細に戻る",@book %></div>
+<%=form_for @book do |form| %>
+	<%= render "form",form:form %>
+
+	<div><%= form.submit "編集",class:"form-btn" %></div>
+<% end %>

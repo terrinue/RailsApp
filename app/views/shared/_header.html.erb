@@ -1,0 +1,14 @@
+<div class="form-item">
+	<% if current_manager %>
+		<ul class="ul-header">
+			<%= current_manager.username %>
+		</ul>
+	<% end %>
+<nav class="menuber">
+	<ul id="ul-header">
+		<%=menu_link_to "書籍一覧",:books %>
+		<%=menu_link_to "書籍の新規登録",:new_book %>
+		<%=menu_link_to "ログアウト",:session, method: :delete, data:{confirm: "ログアウトしますか?"} %>
+	</ul>
+</nav>
+<div>

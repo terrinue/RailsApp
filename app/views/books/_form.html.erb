@@ -1,0 +1,18 @@
+<%= render "shared/errors",obj:@book %>
+
+<table class = "attr">
+	<tr>
+		<th width="10%"><%= form.label:book_title,"書籍タイトル" %></th>
+		<td widt="90"><%= form.text_field:book_title,size:40 %></td>
+	</tr>
+	<tr>
+		<th><%= form.label:company,"出版社" %></th>
+		<td><%= form.text_field:company,size:40 %></td>
+	</tr>
+		<th><%= form.label:writer ,"著者"%></th>
+		<td><%= form.text_field:writer,size:40 %></td>
+	<tr>
+		<th><%= form.label:price ,"価格(税別)"%></th>
+		<td><%= form.text_field:price,size:10 %></td>
+	</tr>
+</table>
