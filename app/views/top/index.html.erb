@@ -1,7 +1,3 @@
-<% if flash.alert %>
-	<p class="alert"><%= flash.alert %></p>
-<% end %>
-
 <div class="form-wrapper">
 	<h1>Sign In</h1>
 	<%= form_tag:session,id: "login_form" do %>
@@ -22,5 +18,9 @@
 	<div class="form-footer">
 		<p><a href="#">Create an account</a></p>
 		<p><a href="#">Forgot password?</a></p>
+<% if flash.alert %>
+	<p class="alert"><%= flash.alert %></p>
+<% end %>
 	</div>
 </div>
+

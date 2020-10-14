@@ -1,6 +1,6 @@
 class ApplicationController < ActionController::Base
-	private def current_manager
-		Manager.find_by(login_id:session[:login_id]) if session[:login_id]
+	private def current_member
+		Member.find_by(id:session[:member_id]) if session[:member_id]
 	end
-	helper_method:current_manager
+	helper_method:current_member
 end
