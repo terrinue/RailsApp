@@ -8,4 +8,4 @@
 #
 #
 
-Managers.create(username:"Test3",password:"asasgao!",password_confirmation:"asagao!")
+Manager.create(username: "Test3",password: "asasgao!",password_confirmation: "asagao!")
