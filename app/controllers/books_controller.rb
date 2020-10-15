@@ -1,17 +1,21 @@
 class BooksController < ApplicationController
 	def index
+		@page_title="書籍一覧"
 		@books=Book.order("id")
 	end
 
 	def show
+		@page_title="書籍詳細"
 		@book=Book.find(params[:id])
 	end
 
 	def new
+		@page_title="書籍作成"
 		@book=Book.new
 	end
 
 	def edit
+		@page_title="書籍編集"
 		@book=Book.find(params[:id])
 	end
 
