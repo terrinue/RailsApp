@@ -1,24 +1,9 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Ruby on Railsフレームワークを用いて、書籍管理画面を作成しました。
+主な画面と機能は下記の通りです。
 
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+1. トップ画面(ログイン機能)
+2. 書籍一覧画面(登録済みの全書籍表示および検索機能。削除リンクを押下すると、削除可能)
+3. 書籍詳細画面(書籍一覧画面で書籍名のリンクをクリックすると詳細情報が表示される)
+4. 編集画面(書籍一覧画面で編集をクリックすると、該当書籍の編集を行える)
